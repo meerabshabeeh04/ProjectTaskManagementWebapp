@@ -58,7 +58,7 @@ include("db_con.php");
     $testquery = "SELECT `TASK_NO` FROM `user_task` WHERE `USER_ID`='$id'";
     $testresult = mysqli_fetch_assoc(mysqli_query($con, $testquery));
     if($testresult){
-        $query7 = "SELECT `TASK_NO` FROM `user_task` WHERE `USER_ID`='$id'";
+    $query7 = "SELECT `TASK_NO` FROM `user_task` WHERE `USER_ID`='$id'";
     $result7 = mysqli_query($con, $query7);
     while ($row7 = mysqli_fetch_assoc($result7)) {
         $task = $row7["TASK_NO"];
@@ -87,14 +87,16 @@ include("db_con.php");
         <p style=" color:black;"><b>Deadline :</b><?=" ".$result8["DEADLINE"]?></p>
 
         <?php
-        if( $result8["STATUS"] == "Not Completed") {
+        if($result8["STATUS"] == "Not Completed") {
             ?>
             <form method="post">
+                <input type="number" name="task" value="<?= $task?>" style=" display:none;">
                 <input type="submit" name="submit" value="Mark as Completed" style=" background-color: darkorchid; border:none; border-radius:10px; padding:5px 10px 5px 10px; color:white;" />
             </form>
             <?php
             if(isset($_POST["submit"])){
-                $query10 = "UPDATE `tasks` SET `STATUS`='Completed' WHERE `TASK_NO`='$task'";
+                $taskno = $_POST["task"];
+                $query10 = "UPDATE `tasks` SET `STATUS`='Completed' WHERE `TASK_NO`='$taskno'";
                 $result10 = mysqli_query($con, $query10);
                 header("Location: my_task.php?id=".$id);
             }
