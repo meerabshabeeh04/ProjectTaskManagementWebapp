@@ -1,0 +1,43 @@
+USER_ TABLE:
+INSERT INTO `user_`(`FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD_`, `PH_NO`, `GENDER`) VALUES ('Sania','Rehan','SaniaRehan@gmail.com','sania145','03007777333','Female');
+INSERT INTO `user_`(`FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD_`, `PH_NO`, `GENDER`) VALUES ('Zahid','Khan','ZahidKhan@gmail.com','zahid765','03327878787','Male');
+INSERT INTO `user_`(`FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD_`, `PH_NO`, `GENDER`) VALUES ('Hania','Saad','HaniaSaad@gmail.com','hania444','03004545454','Female');
+INSERT INTO `user_`(`FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD_`, `PH_NO`, `GENDER`) VALUES ('Sadia','Hammad','SadiaHammad@gmail.com','sadia122','03353335555','Female');
+INSERT INTO `user_`(`FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD_`, `PH_NO`, `GENDER`) VALUES ('Mohid','Babar','MohidBabar@gmail.com','mohid888','03356666222','Male');
+INSERT INTO `user_`(`FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD_`, `PH_NO`, `GENDER`) VALUES ('Hanzala','Ahmed','HanzalaAhmed@gmail.com','hanzala000','03354444444','Male');
+INSERT INTO `user_`(`FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD_`, `PH_NO`, `GENDER`) VALUES ('Afsah','Rehman','AfsahRehman@gmail.com','afsah555','03324545454','Female');
+INSERT INTO `user_`(`FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD_`, `PH_NO`, `GENDER`) VALUES ('Aafia','Ahad','AafiaAhad@gmail.com','aafia111','03301212121','Female');
+
+
+PROJECT TABLE:
+INSERT INTO `project`(`OWNER_ID`, `TITLE`, `DESCRIPTION`) VALUES ('1','Snake Game App','We have to make an snake game app using android studio, it should have a very user friendly GUI, it should provide an amazing user experience, it should include different difficulty levels and also score saver. I am dividing this task into 3 parts and soon will be assigning the tasks to every respective member accordingly');
+INSERT INTO `project`(`OWNER_ID`, `TITLE`, `DESCRIPTION`) VALUES ('4','E-Commerce Website','We have to make an e-commerce website using html, css, php, and mysql, it should contain all users(clients/sellers) data into database and provide a very user-friendly UI so that users can easily trade.I have divided this project into three parts the front-end design, back-end design and the database development. I have assigned the tasks accordingly, kindly have a look on it and complete it before its deadline');
+INSERT INTO `project`(`OWNER_ID`, `TITLE`, `DESCRIPTION`) VALUES ('6','Video Clip on effect of raising inflation on people','We have to make a video clip to show practically the intense effect of raising inflation on the people. The video should not be more than 5 minutes. I have divided this project into 5 tasks, kindly everyone have a look on their tasks and complete it before the provided deadline');
+
+
+TASKS TABLE:
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('1','Providing the Main Idea','2023-10-8','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('1','Making xml files','2023-10-15','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('1','Coding the backend','2023-10-22','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('2','Coding the frontend','2023-10-5','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('2','Coding the backend','2023-10-15','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('2','Developing Database','2023-10-25','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('3','Writing the Script and Dialoges','2023-10-5','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('3','Recording Voice Overs','2023-10-10','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('3','Role in the Script act','2023-10-30','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('3','Role in the Script act','2023-10-30','Not Completed');
+INSERT INTO `tasks`(`PROJECT_ID`, `DESCRIPTION`, `DEADLINE`, `STATUS`) VALUES ('3','Role in the Script act','2023-10-30','Not Completed');
+
+
+USER_TASK TABLE:
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('1','4');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('2','5');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('3','6');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('4','1');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('5','2');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('6','7');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('7','3');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('8','8');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('9','4');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('10','5');
+INSERT INTO `user_task`(`TASK_NO`, `USER_ID`) VALUES ('11','2');

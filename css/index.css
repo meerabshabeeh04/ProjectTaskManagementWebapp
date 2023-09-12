@@ -1,0 +1,17 @@
+header,footer{
+    height: 120px;
+    background-color: black;
+    text-align: center;
+    color: darkorchid;
+    font-size: 70px;
+}
+
+div.page-body{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.log-box{
+    display: flex;
+    justify-content: center;
+}
